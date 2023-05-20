@@ -1,0 +1,82 @@
+.CalendarContainer {
+  display: inline-block;
+  margin-top: 200px;
+  max-width: 400px;
+  background-color: rgb(67, 66, 66);
+  padding: 10px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+}
+
+.MonthTitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.YearTitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.WeekDayBar {
+  display: flex;
+}
+
+.Weekday {
+  display: block;
+  flex: 1 0 0%;
+  width: calc(100% / 7);
+  padding: 0.8rem;
+  background: transparent;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.Week {
+  display: flex;
+}
+
+.Day {
+  display: block;
+  flex: 1 0 0%;
+  width: calc(100% / 7);
+  margin: 0;
+  padding: 0.8rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  font-size: 1.2 rem;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.EmptyStateDay {
+  display: block;
+  flex: 1 0 0%;
+  width: calc(100% / 7);
+  margin: 0;
+  padding: 0.8rem;
+  border: none;
+}
+
+.Day--selected {
+  background: #e3e3e3;
+  border: 1px solid #5c6ac4;
+  color: rgb(0, 0, 0);
+}
+
+.DisplayDate {
+  display: inline-block;
+  margin-bottom: 200px;
+}
+
+.Day--hovering {
+  background: #a8a1a1;
+  border: 1px solid #9a9a9a;
+  color: rgb(0, 0, 0);
+}
